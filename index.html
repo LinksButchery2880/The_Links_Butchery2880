@@ -59,10 +59,44 @@
       transform: scale(1.05);
       opacity: 0.9;
     }
+/* 🔒 Staff Section */
+.staff-section {
+  margin-top: 60px;
+}
 
+.staff-buttons {
+  display: none;
+  margin-top: 20px;
+}
+
+.staff-buttons button {
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 8px;
+  background-color: #444;
+  color: white;
+  border-radius: 8px;
+}
+
+.staff-access-btn {
+  background-color: #222;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+}
   </style>
 </head>
+<script>
+  function unlockStaff() {
+    let password = prompt("Enter staff password:");
 
+    if (password === "Th3L1nksICG!") {
+      document.getElementById("staffButtons").style.display = "block";
+    } else if (password !== null) {
+      alert("Incorrect password");
+    }
+  }
+</script>
 <body>
 
   <h1>Inn Collection Group Butchery Ordering Portal</h1>
@@ -81,6 +115,28 @@
     </a>
 
   </div>
+<div class="staff-section">
 
+  <button class="staff-access-btn" onclick="unlockStaff()">
+    Staff Access 🔒
+  </button>
+
+  <div class="staff-buttons" id="staffButtons">
+
+    <a href="https://inncollectiongroup-my.sharepoint.com/:x:/r/personal/david_armstrong_inncollectiongroup_com/Documents/Internal%20Butchery%20Ordering%20-%20LIVE.xlsx?d=w383a4b530a0c43f693f6238da72fcc83&csf=1&web=1&e=gIwVxt" target="_blank">
+      <button>Orders</button>
+    </a>
+
+    <a href="https://inncollectiongroup-my.sharepoint.com/:x:/p/david_armstrong/IQCfBDXIQ40gQ5QW1wEZa4TtAcClOzGhcOPKdwffhalwkoc?email=David.Armstrong%40inncollectiongroup.com&e=yLG36F" target="_blank">
+      <button>Confirmed Orders</button>
+    </a>
+
+    <a href="https://inncollectiongroup-my.sharepoint.com/:x:/p/david_armstrong/IQAFZkr-EJdQQJfPDZwN_Lt4AZzgFnKQAV0b30K0vA0cWIU?email=David.Armstrong%40inncollectiongroup.com&e=5YfxLm" target="_blank">
+      <button>Stock Take</button>
+    </a>
+
+  </div>
+
+</div>
 </body>
 </html>
