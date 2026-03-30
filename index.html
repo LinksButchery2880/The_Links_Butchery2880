@@ -1,21 +1,78 @@
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Butchery Order Forms</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      height: 100vh;
+
+      /* 🔥 Background */
+      background: url(background: linear-gradient(135deg, #1e1e1e, #3a3a3a);) no-repeat center center;
+background-size: cover;
+    }
+<img src="file:///C:/Users/Adam/Downloads/LABEL%20image%20master.pdf" width="150">
+    h1 {
+      margin-top: 100px;
+      font-size: 40px;
+    }
+
+    .container {
+      margin-top: 40px;
+    }
+
+    button {
+      padding: 18px 35px;
+      font-size: 18px;
+      margin: 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    /* 🔵 Standard */
+    .standard {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    /* 🟠 EXT */
     .ext {
       background-color: #FF8800;
       color: white;
     }
+
+    /* ✨ Hover effect */
+    button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
   </style>
 </head>
+
 <body>
 
-  <h1>Select Order Form</h1>
+  <h1>Butchery Order Portal</h1>
 
-  <a href="https://forms.cloud.microsoft/e/Hg4jKcADAu" target="_blank">
-    <button class="standard">Standard Order Form</button>
-  </a>
+  <div class="container">
 
-  <a href="https://forms.cloud.microsoft/e/JiVkBPVxVT" target="_blank">
-    <button class="ext">EXT Order Form</button>
-  </a>
+    <!-- 🔵 Rename button here -->
+    <a href="https://forms.cloud.microsoft/e/Hg4jKcADAu" target="_blank">
+      <button class="standard">Place Orders Here</button>
+    </a>
+
+    <!-- 🟠 Rename button here -->
+    <a href="https://forms.cloud.microsoft/e/JiVkBPVxVT" target="_blank">
+      <button class="ext">Confirm Your Order Here</button>
+    </a>
+
+  </div>
 
 </body>
 </html>
