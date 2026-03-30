@@ -5,26 +5,31 @@
   <title>Butchery Order Forms</title>
 
   <style>
-   body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  height: 100vh;
-
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url("logo.png") no-repeat center center;
-
-  background-size: 300px;
-  color: white;
-}
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      height: 100vh;
+      background: #ffffff;
+      color: #000;
+    }
 
     h1 {
-      margin-top: 100px;
+      margin-top: 60px;
       font-size: 40px;
     }
 
+    /* 🔥 LOGO STYLE */
+    .logo {
+      width: 350px;              /* bigger logo */
+      margin: 20px auto 10px;    /* closer to buttons */
+      display: block;
+      opacity: 0.95;
+      filter: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+    }
+
     .container {
-      margin-top: 40px;
+      margin-top: 10px;          /* pulls buttons closer */
     }
 
     button {
@@ -62,14 +67,15 @@
 
   <h1>Inn Collection Group Butchery Ordering Portal</h1>
 
+  <!-- 🔥 LOGO HERE -->
+  <img src="logo.png" class="logo">
+
   <div class="container">
 
-    <!-- 🔵 Rename button here -->
     <a href="https://forms.cloud.microsoft/e/Hg4jKcADAu" target="_blank">
       <button class="standard">Place Orders Here</button>
     </a>
 
-    <!-- 🟠 Rename button here -->
     <a href="https://forms.cloud.microsoft/e/JiVkBPVxVT" target="_blank">
       <button class="ext">Confirm Your Order Here</button>
     </a>
